@@ -1,0 +1,51 @@
+# Ambientes e segredos
+.env
+*.env
+automacoes/.env
+automacoes/credentials.json
+automacoes/token.json
+automacoes/whatsapp/auth_info/
+automacoes/whatsapp/auth_info*
+
+# Python e Ambientes Virtuais
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Node
+node_modules/
+automacoes/whatsapp/node_modules/
+
+# Mídias e Vídeos pesados
+mídia/
+midia/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.wmv
+*.flv
+
+# Arquivos de Coleta / Captura Bruta pesada (Qualisys / MoCap / Binários pesados)
+*.x2d
+*.x2d.sup
+*.qtm
+*.c3d.bak
+
+# Arquivos compactados pesados
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+desktop.ini

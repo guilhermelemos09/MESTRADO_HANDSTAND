@@ -1,0 +1,3 @@
+﻿ID_Participante,Nome_Completo,Nome_Abreviado,Idade_anos,Sexo,Modalidade_Principal,Tempo_Pratica_Total_meses,Tempo_Treino_Especifico_HS_meses,Frequencia_Semanal_treinos,Historico_Lesao_MMSS_12m,PARQ_Apto,Capaz_HS_3s,Capaz_HSW_3passos
+P001,Guilherme de Paula Lemos,GPL,28,M,CrossFit,72,60,5,Nao,Sim,Sim,Sim
+P002,Gustavo Lemos Aluno,GLA,24,M,Calistenia,48,36,4,Nao,Sim,Sim,Sim

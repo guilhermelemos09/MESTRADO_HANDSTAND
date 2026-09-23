@@ -1,0 +1,4 @@
+﻿Arquivo,Base_Apoio_mm,Cadencia_passos_s,Comprimento_Passada_Medio_mm,Distancia_Percorrida_m,Duplo_Suporte_pct,Extensao_Cervical_deg,Flexao_Plantar_deg,ID_Participante,Indice_Verticalidade_deg,Num_Passos,Oscilacao_ML_CoM_mm,Rotacao_Maos_deg,Status_Marcha,Tempo_Execucao_s,Tentativa,Tipo_Tarefa,Variabilidade_Espacial_CV_pct,Variabilidade_Temporal_CV_pct,Velocidade_Media_mm_s
+P001_hs_walk01_limpo.c3d,531.73,1.35,137.6,1.651,77.78,55.54,22.43,P001,12.16,12,592.73,48.05,Valida (>= 3 passos),8.86,T1,HSW,401.04,51.62,186.26
+P001_hs_walk02_limpo.c3d,585.9,1.21,222.77,1.782,69.39,20.91,-9.56,P001,15.1,8,541.08,25.23,Valida (>= 3 passos),6.62,T2,HSW,83.93,36.52,269.41
+P001_hs_walk03_limpo.c3d,566.77,0.98,428.28,4.283,56.01,42.64,5.85,P001,13.42,10,287.99,66.87,Valida (>= 3 passos),10.18,T3,HSW,14.07,56.95,420.5

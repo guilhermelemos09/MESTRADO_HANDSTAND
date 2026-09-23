@@ -1,0 +1,12 @@
+{
+  "name": "whatsapp-automacao",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Robô de WhatsApp para envio de mensagens e relatórios aos participantes",
+  "main": "bot.js",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^7.0.0-rc14",
+    "pino": "^10.3.1",
+    "qrcode-terminal": "^0.12.0"
+  }
+}

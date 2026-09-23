@@ -1,0 +1,17 @@
+# ==============================================================================
+# LINKS OFICIAIS DOS FORMULÁRIOS GOOGLE - MESTRADO HANDSTAND (EEFERP-USP)
+# Mestrando: Guilherme de Paula Lemos | Orientador: Prof. Dr. Matheus Machado Gomes
+# ==============================================================================
+
+# FORMULÁRIO 1: CADASTRO E TRIAGEM (PÚBLICO / INTERESSADOS)
+FORM1_NOME=CADASTRO E TRIAGEM - PESQUISA HANDSTAND (EEFERP-USP)
+FORM1_LINK_ENVIO=https://docs.google.com/forms/d/1htV0NL9JDS0hB8gJnB7N0INYuv_Cs5-IH07DffEopY4/viewform
+FORM1_LINK_EDICAO=https://docs.google.com/forms/d/1htV0NL9JDS0hB8gJnB7N0INYuv_Cs5-IH07DffEopY4/edit
+FORM1_SHEETS_EXPORT_CSV=https://docs.google.com/spreadsheets/d/1IYHwRtvuZYG8Z5bXiwVSl1skBKMUj6P4mErCBt4d2k8/edit?usp=sharing
+
+# FORMULÁRIO 2: DADOS DA PESQUISA - PERFIL DE PRÁTICA (ENVIADO APÓS AGENDAMENTO)
+FORM2_NOME=DADOS DA PESQUISA - PERFIL DE PRÁTICA (EEFERP-USP)
+FORM2_LINK_ENVIO=https://docs.google.com/forms/d/1suHdIVSFpFyUoRIarTKX9ttI6KG-XLqkwvcLD99DDQA/viewform
+FORM2_LINK_EDICAO=https://docs.google.com/forms/d/1suHdIVSFpFyUoRIarTKX9ttI6KG-XLqkwvcLD99DDQA/edit
+FORM2_SHEETS_EXPORT_CSV=https://docs.google.com/spreadsheets/d/1djXOfn8V5FQDTjbO5UwekLODKHlVDd-KEqMbhuTMgG0/edit?usp=sharing
+

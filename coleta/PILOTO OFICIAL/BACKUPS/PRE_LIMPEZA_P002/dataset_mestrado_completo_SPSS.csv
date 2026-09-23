@@ -1,0 +1,3 @@
+﻿ID_Participante,Nome_Abreviado,Idade_anos,Sexo,Modalidade_Principal,Tempo_Pratica_Total_meses,Tempo_Treino_Especifico_HS_meses,Frequencia_Semanal_treinos,Massa_Corporal_kg,Estatura_cm,IMC_kg_m2,Percentual_Gordura_pct,Massa_Magra_MMSS_kg,FPM_Dominante_Max_kgf,FPM_NaoDominante_Max_kgf,FPM_Max_Global_kgf,FPM_Relativa_kgf_kg,LSI_FPM_pct,FFP_Biodex_Dominante_Max_Nm,FFP_Biodex_NaoDominante_Max_Nm,FFP_Biodex_Max_Global_Nm,FFP_Biodex_Relativo_Nm_kg,LSI_FFP_pct,1RM_ShoulderPress_Absoluta_kg,1RM_ShoulderPress_Relativa_kg_kg,Resistencia_WallHS_Max_s
+P001,GPL,28,M,CrossFit,72,60,5,65.25,171.0,22.31,13.88,,46.0,52.0,52.0,0.751,113.04,18.5,20.5,20.5,0.2989,110.81,56.0,0.8582,64.0
+P002,GLA,24,M,Calistenia,48,36,4,,,,,,,,,,,,,,,,,,

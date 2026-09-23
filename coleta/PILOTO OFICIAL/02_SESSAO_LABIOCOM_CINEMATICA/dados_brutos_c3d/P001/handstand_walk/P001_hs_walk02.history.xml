@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Trial name="P001_hs_walk02" notes="">
+
+  <Parameters>
+    <Param header="0" name="Capture Date" value="2026-Sep-09 10:58:43"/>
+    <Param header="0" name="x2d" value="P001_hs_walk02.x2d"/>
+    <Param header="0" name="x1d" value="P001_hs_walk02.x1d"/>
+  </Parameters>
+
+  <Run name="" notes="">
+    <Parameters>
+      <Param header="0" name="Version" value="2.12.0.131369h"/>
+      <Param header="0" name="Start Date" value="2026-Sep-16 10:58:09"/>
+    </Parameters>
+    <OperationType name="Core Processing" notes="">
+      <OperationSubType name="Reconstruct" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:58:09"/>
+          <Param header="1" name="Frame Range" value=""/>
+          <Param header="0" name="First Frame" value="1"/>
+          <Param header="0" name="Last Frame" value="1680"/>
+          <Param header="1" name="Grayscale Circle Fitting" value=""/>
+          <Param header="0" name="Enable" value="Yes"/>
+          <Param header="0" name="Circularity Threshold Tweak" value="0"/>
+          <Param header="1" name="Reconstruction" value=""/>
+          <Param header="0" name="3D Predictions" value="No"/>
+          <Param header="0" name="Environmental Drift Tolerance" value="1.5"/>
+          <Param header="0" name="Minimum Cameras to Start Trajectory" value="3"/>
+          <Param header="0" name="Minimum Cameras to Continue Trajectory" value="2"/>
+          <Param header="0" name="Reconstruction Minimum Separation" value="14"/>
+          <Param header="0" name="Minimum Centroid Radius" value="0"/>
+          <Param header="0" name="Maximum Centroid Radius" value="50"/>
+          <Param header="0" name="Minimum Reconstruction Radius" value="0"/>
+          <Param header="0" name="Maximum Reconstruction Radius" value="1000"/>
+          <Param header="0" name="Volume Min X" value="-100000"/>
+          <Param header="0" name="Volume Min Y" value="-100000"/>
+          <Param header="0" name="Volume Min Z" value="-100000"/>
+          <Param header="0" name="Volume Max X" value="100000"/>
+          <Param header="0" name="Volume Max Y" value="100000"/>
+          <Param header="0" name="Volume Max Z" value="100000"/>
+          <Param header="1" name="Trajectory Tracking" value=""/>
+          <Param header="0" name="Trajectory Startup Error" value="150"/>
+          <Param header="0" name="Trajectory Prediction Error" value="150"/>
+          <Param header="0" name="Max Trajectory Length to Delete" value="0"/>
+        </Parameters>
+      </OperationSubType>
+    </OperationType>
+    <OperationType name="Manual Edits" notes="">
+      <OperationSubType name="Label Trajectory  P001:LFHD" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:58:38"/>
+          <Param header="0" name="Label" value="P001:LFHD"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:RFHD" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:58:41"/>
+          <Param header="0" name="Label" value="P001:RFHD"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:LBHD" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:58:42"/>
+          <Param header="0" name="Label" value="P001:LBHD"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:RBHD" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:58:43"/>
+          <Param header="0" name="Label" value="P001:RBHD"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:C7" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:58:49"/>
+          <Param header="0" name="Label" value="P001:C7"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:T10" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:58:52"/>
+          <Param header="0" name="Label" value="P001:T10"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:STRN" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:58:58"/>
+          <Param header="0" name="Label" value="P001:STRN"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:RBAK" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:58:59"/>
+          <Param header="0" name="Label" value="P001:RBAK"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:LSHO" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:06"/>
+          <Param header="0" name="Label" value="P001:LSHO"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:LUPA" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:08"/>
+          <Param header="0" name="Label" value="P001:LUPA"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:LELB" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:08"/>
+          <Param header="0" name="Label" value="P001:LELB"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:LFRM" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:09"/>
+          <Param header="0" name="Label" value="P001:LFRM"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:LWRA" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:10"/>
+          <Param header="0" name="Label" value="P001:LWRA"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:LWRB" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:11"/>
+          <Param header="0" name="Label" value="P001:LWRB"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:LFIN" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:12"/>
+          <Param header="0" name="Label" value="P001:LFIN"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:RSHO" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:13"/>
+          <Param header="0" name="Label" value="P001:RSHO"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:RUPA" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:14"/>
+          <Param header="0" name="Label" value="P001:RUPA"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:RELB" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:14"/>
+          <Param header="0" name="Label" value="P001:RELB"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:RFRM" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:15"/>
+          <Param header="0" name="Label" value="P001:RFRM"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:RWRA" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:16"/>
+          <Param header="0" name="Label" value="P001:RWRA"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:RWRB" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:17"/>
+          <Param header="0" name="Label" value="P001:RWRB"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:RFIN" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:18"/>
+          <Param header="0" name="Label" value="P001:RFIN"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:LASI" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:25"/>
+          <Param header="0" name="Label" value="P001:LASI"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:RASI" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:26"/>
+          <Param header="0" name="Label" value="P001:RASI"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:LPSI" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:27"/>
+          <Param header="0" name="Label" value="P001:LPSI"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:RPSI" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:28"/>
+          <Param header="0" name="Label" value="P001:RPSI"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:LTHI" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:30"/>
+          <Param header="0" name="Label" value="P001:LTHI"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:LKNE" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:30"/>
+          <Param header="0" name="Label" value="P001:LKNE"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:LTIB" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:32"/>
+          <Param header="0" name="Label" value="P001:LTIB"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:LANK" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:35"/>
+          <Param header="0" name="Label" value="P001:LANK"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:LHEE" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:36"/>
+          <Param header="0" name="Label" value="P001:LHEE"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:LTOE" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:36"/>
+          <Param header="0" name="Label" value="P001:LTOE"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:RTHI" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:38"/>
+          <Param header="0" name="Label" value="P001:RTHI"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:RKNE" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:39"/>
+          <Param header="0" name="Label" value="P001:RKNE"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:RTIB" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:39"/>
+          <Param header="0" name="Label" value="P001:RTIB"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:RANK" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:42"/>
+          <Param header="0" name="Label" value="P001:RANK"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:RHEE" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:43"/>
+          <Param header="0" name="Label" value="P001:RHEE"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:RTOE" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:43"/>
+          <Param header="0" name="Label" value="P001:RTOE"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:LREF" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:49"/>
+          <Param header="0" name="Label" value="P001:LREF"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  P001:RREF" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Sep-16 10:59:50"/>
+          <Param header="0" name="Label" value="P001:RREF"/>
+          <Param header="0" name="Frame" value="841"/>
+        </Parameters>
+      </OperationSubType>
+    </OperationType>
+  </Run>
+
+</Trial>

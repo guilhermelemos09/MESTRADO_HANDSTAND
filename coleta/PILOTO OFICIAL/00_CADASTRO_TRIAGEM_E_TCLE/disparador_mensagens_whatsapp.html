@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disparador de WhatsApp — Recrutamento Handstand USP</title>
+    <style>
+        :root {
+            --primary: #0f172a;
+            --whatsapp: #25D366;
+            --whatsapp-dark: #128C7E;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            padding: 24px;
+            border-radius: 16px;
+            margin-bottom: 24px;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .header p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .card-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .candidate-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .candidate-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px -4px rgba(0,0,0,0.06);
+            border-color: #cbd5e1;
+        }
+
+        .candidate-info {
+            flex: 1;
+        }
+
+        .candidate-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 6px;
+        }
+
+        .candidate-name {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .candidate-badge {
+            background: #e0f2fe;
+            color: #0369a1;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 20px;
+        }
+
+        .candidate-phone {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+
+        .msg-preview {
+            background: #f1f5f9;
+            border-left: 3px solid var(--whatsapp-dark);
+            padding: 10px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            color: #334155;
+            white-space: pre-line;
+            line-height: 1.4;
+        }
+
+        .btn-whatsapp {
+            background-color: var(--whatsapp);
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            white-space: nowrap;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+            transition: background 0.2s, transform 0.1s;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: var(--whatsapp-dark);
+            transform: scale(1.02);
+        }
+
+        .btn-whatsapp:active {
+            transform: scale(0.98);
+        }
+
+        .icon-wa {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        .footer-note {
+            margin-top: 24px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Disparador Direto — Contato com Voluntários</h1>
+        <p>Clique no botão verde de cada participante para abrir o WhatsApp (Web ou Aplicativo) <strong>já na conversa direta com a pessoa e com o texto 100% limpo digitado</strong>.</p>
+    </div>
+
+    <div class="card-list">
+        <!-- 1. Danilo -->
+        <div class="candidate-card">
+            <div class="candidate-info">
+                <div class="candidate-header">
+                    <span class="candidate-name">Danilo Francoi</span>
+                    <span class="candidate-badge">Seg / Sáb (Manhã)</span>
+                </div>
+                <div class="candidate-phone">WhatsApp: (16) 98162-9980</div>
+                <div class="msg-preview">Fala, Danilo! Tudo bem? Aqui é o Guilherme Lemos, da pesquisa de Handstand da USP.
+
+Passando para agradecer demais pela sua inscrição!
+
+Nossos testes começam a partir do mês que vem. Como preciso conciliar a agenda de dois laboratórios com a disponibilidade de cada voluntário, pode levar um tempinho até eu te chamar para marcar suas datas.
+
+Temos uma janela de pelo menos 6 meses de coletas, então vou agendando o pessoal aos poucos. Qualquer dúvida, pode me mandar mensagem por aqui. Valeu demais pela força!</div>
+            </div>
+            <a class="btn-whatsapp" target="_blank" href="https://wa.me/5516981629980?text=Fala%2C%20Danilo%21%20Tudo%20bem%3F%20Aqui%20%C3%A9%20o%20Guilherme%20Lemos%2C%20da%20pesquisa%20de%20Handstand%20da%20USP.%0A%0APassando%20para%20agradecer%20demais%20pela%20sua%20inscri%C3%A7%C3%A3o%21%0A%0ANossos%20testes%20come%C3%A7am%20a%20partir%20do%20m%C3%AAs%20que%20vem.%20Como%20preciso%20conciliar%20a%20agenda%20de%20dois%20laborat%C3%B3rios%20com%20a%20disponibilidade%20de%20cada%20volunt%C3%A1rio%2C%20pode%20levar%20um%20tempinho%20at%C3%A9%20eu%20te%20chamar%20para%20marcar%20suas%20datas.%0A%0ATemos%20uma%20janela%20de%20pelo%20menos%206%20meses%20de%20coletas%2C%20ent%C3%A3o%20vou%20agendando%20o%20pessoal%20aos%20poucos.%20Qualquer%20d%C3%BAvida%2C%20pode%20me%20mandar%20mensagem%20por%20aqui.%20Valeu%20demais%20pela%20for%C3%A7a%21">
+                <svg class="icon-wa" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                Abrir no WhatsApp
+            </a>
+        </div>
+
+        <!-- 2. Rafaela -->
+        <div class="candidate-card">
+            <div class="candidate-info">
+                <div class="candidate-header">
+                    <span class="candidate-name">Rafaela Lúcia Lopes de Souza</span>
+                    <span class="candidate-badge">Ter / Qui / Sex</span>
+                </div>
+                <div class="candidate-phone">WhatsApp: (16) 98164-1398</div>
+                <div class="msg-preview">Fala, Rafaela! Tudo bem? Aqui é o Guilherme Lemos, da pesquisa de Handstand da USP.
+
+Passando para agradecer demais pela sua inscrição!
+
+Nossos testes começam a partir do mês que vem. Como preciso conciliar a agenda de dois laboratórios com a disponibilidade de cada voluntário, pode levar um tempinho até eu te chamar para marcar suas datas.
+
+Temos uma janela de pelo menos 6 meses de coletas, então vou agendando o pessoal aos poucos. Qualquer dúvida, pode me mandar mensagem por aqui. Valeu demais pela força!</div>
+            </div>
+            <a class="btn-whatsapp" target="_blank" href="https://wa.me/5516981641398?text=Fala%2C%20Rafaela%21%20Tudo%20bem%3F%20Aqui%20%C3%A9%20o%20Guilherme%20Lemos%2C%20da%20pesquisa%20de%20Handstand%20da%20USP.%0A%0APassando%20para%20agradecer%20demais%20pela%20sua%20inscri%C3%A7%C3%A3o%21%0A%0ANossos%20testes%20come%C3%A7am%20a%20partir%20do%20m%C3%AAs%20que%20vem.%20Como%20preciso%20conciliar%20a%20agenda%20de%20dois%20laborat%C3%B3rios%20com%20a%20disponibilidade%20de%20cada%20volunt%C3%A1rio%2C%20pode%20levar%20um%20tempinho%20at%C3%A9%20eu%20te%20chamar%20para%20marcar%20suas%20datas.%0A%0ATemos%20uma%20janela%20de%20pelo%20menos%206%20meses%20de%20coletas%2C%20ent%C3%A3o%20vou%20agendando%20o%20pessoal%20aos%20poucos.%20Qualquer%20d%C3%BAvida%2C%20pode%20me%20mandar%20mensagem%20por%20aqui.%20Valeu%20demais%20pela%20for%C3%A7a%21">
+                <svg class="icon-wa" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                Abrir no WhatsApp
+            </a>
+        </div>
+
+        <!-- 3. Heric -->
+        <div class="candidate-card">
+            <div class="candidate-info">
+                <div class="candidate-header">
+                    <span class="candidate-name">Heric Aurélio dos Santos</span>
+                    <span class="candidate-badge">Sex / Sáb (14h-16h)</span>
+                </div>
+                <div class="candidate-phone">WhatsApp: (17) 98125-1334</div>
+                <div class="msg-preview">Fala, Heric! Tudo bem? Aqui é o Guilherme Lemos, da pesquisa de Handstand da USP.
+
+Passando para agradecer demais pela sua inscrição!
+
+Nossos testes começam a partir do mês que vem. Como preciso conciliar a agenda de dois laboratórios com a disponibilidade de cada voluntário, pode levar um tempinho até eu te chamar para marcar suas datas.
+
+Temos uma janela de pelo menos 6 meses de coletas, então vou agendando o pessoal aos poucos. Qualquer dúvida, pode me mandar mensagem por aqui. Valeu demais pela força!</div>
+            </div>
+            <a class="btn-whatsapp" target="_blank" href="https://wa.me/5517981251334?text=Fala%2C%20Heric%21%20Tudo%20bem%3F%20Aqui%20%C3%A9%20o%20Guilherme%20Lemos%2C%20da%20pesquisa%20de%20Handstand%20da%20USP.%0A%0APassando%20para%20agradecer%20demais%20pela%20sua%20inscri%C3%A7%C3%A3o%21%0A%0ANossos%20testes%20come%C3%A7am%20a%20partir%20do%20m%C3%AAs%20que%20vem.%20Como%20preciso%20conciliar%20a%20agenda%20de%20dois%20laborat%C3%B3rios%20com%20a%20disponibilidade%20de%20cada%20volunt%C3%A1rio%2C%20pode%20levar%20um%20tempinho%20at%C3%A9%20eu%20te%20chamar%20para%20marcar%20suas%20datas.%0A%0ATemos%20uma%20janela%20de%20pelo%20menos%206%20meses%20de%20coletas%2C%20ent%C3%A3o%20vou%20agendando%20o%20pessoal%20aos%20poucos.%20Qualquer%20d%C3%BAvida%2C%20pode%20me%20mandar%20mensagem%20por%20aqui.%20Valeu%20demais%20pela%20for%C3%A7a%21">
+                <svg class="icon-wa" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                Abrir no WhatsApp
+            </a>
+        </div>
+
+        <!-- 4. Larissa -->
+        <div class="candidate-card">
+            <div class="candidate-info">
+                <div class="candidate-header">
+                    <span class="candidate-name">Larissa Kaori Ogawa</span>
+                    <span class="candidate-badge">Seg / Sex</span>
+                </div>
+                <div class="candidate-phone">WhatsApp: (11) 97487-4515</div>
+                <div class="msg-preview">Fala, Larissa! Tudo bem? Aqui é o Guilherme Lemos, da pesquisa de Handstand da USP.
+
+Passando para agradecer demais pela sua inscrição!
+
+Nossos testes começam a partir do mês que vem. Como preciso conciliar a agenda de dois laboratórios com a disponibilidade de cada voluntário, pode levar um tempinho até eu te chamar para marcar suas datas.
+
+Temos uma janela de pelo menos 6 meses de coletas, então vou agendando o pessoal aos poucos. Qualquer dúvida, pode me mandar mensagem por aqui. Valeu demais pela força!</div>
+            </div>
+            <a class="btn-whatsapp" target="_blank" href="https://wa.me/5511974874515?text=Fala%2C%20Larissa%21%20Tudo%20bem%3F%20Aqui%20%C3%A9%20o%20Guilherme%20Lemos%2C%20da%20pesquisa%20de%20Handstand%20da%20USP.%0A%0APassando%20para%20agradecer%20demais%20pela%20sua%20inscri%C3%A7%C3%A3o%21%0A%0ANossos%20testes%20come%C3%A7am%20a%20partir%20do%20m%C3%AAs%20que%20vem.%20Como%20preciso%20conciliar%20a%20agenda%20de%20dois%20laborat%C3%B3rios%20com%20a%20disponibilidade%20de%20cada%20volunt%C3%A1rio%2C%20pode%20levar%20um%20tempinho%20at%C3%A9%20eu%20te%20chamar%20para%20marcar%20suas%20datas.%0A%0ATemos%20uma%20janela%20de%20pelo%20menos%206%20meses%20de%20coletas%2C%20ent%C3%A3o%20vou%20agendando%20o%20pessoal%20aos%20poucos.%20Qualquer%20d%C3%BAvida%2C%20pode%20me%20mandar%20mensagem%20por%20aqui.%20Valeu%20demais%20pela%20for%C3%A7a%21">
+                <svg class="icon-wa" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                Abrir no WhatsApp
+            </a>
+        </div>
+
+        <!-- 5. Victoria -->
+        <div class="candidate-card">
+            <div class="candidate-info">
+                <div class="candidate-header">
+                    <span class="candidate-name">Victoria Ferreira Cabral</span>
+                    <span class="candidate-badge">Seg / Qua / Sex (16h-20h)</span>
+                </div>
+                <div class="candidate-phone">WhatsApp: (16) 98820-2959</div>
+                <div class="msg-preview">Fala, Victoria! Tudo bem? Aqui é o Guilherme Lemos, da pesquisa de Handstand da USP.
+
+Passando para agradecer demais pela sua inscrição!
+
+Nossos testes começam a partir do mês que vem. Como preciso conciliar a agenda de dois laboratórios com a disponibilidade de cada voluntário, pode levar um tempinho até eu te chamar para marcar suas datas.
+
+Temos uma janela de pelo menos 6 meses de coletas, então vou agendando o pessoal aos poucos. Qualquer dúvida, pode me mandar mensagem por aqui. Valeu demais pela força!</div>
+            </div>
+            <a class="btn-whatsapp" target="_blank" href="https://wa.me/5516988202959?text=Fala%2C%20Victoria%21%20Tudo%20bem%3F%20Aqui%20%C3%A9%20o%20Guilherme%20Lemos%2C%20da%20pesquisa%20de%20Handstand%20da%20USP.%0A%0APassando%20para%20agradecer%20demais%20pela%20sua%20inscri%C3%A7%C3%A3o%21%0A%0ANossos%20testes%20come%C3%A7am%20a%20partir%20do%20m%C3%AAs%20que%20vem.%20Como%20preciso%20conciliar%20a%20agenda%20de%20dois%20laborat%C3%B3rios%20com%20a%20disponibilidade%20de%20cada%20volunt%C3%A1rio%2C%20pode%20levar%20um%20tempinho%20at%C3%A9%20eu%20te%20chamar%20para%20marcar%20suas%20datas.%0A%0ATemos%20uma%20janela%20de%20pelo%20menos%206%20meses%20de%20coletas%2C%20ent%C3%A3o%20vou%20agendando%20o%20pessoal%20aos%20poucos.%20Qualquer%20d%C3%BAvida%2C%20pode%20me%20mandar%20mensagem%20por%20aqui.%20Valeu%20demais%20pela%20for%C3%A7a%21">
+                <svg class="icon-wa" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                Abrir no WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-note">
+        Pesquisa de Mestrado — EEFERP-USP | Pesquisador: Guilherme de Paula Lemos
+    </div>
+</div>
+
+</body>
+</html>

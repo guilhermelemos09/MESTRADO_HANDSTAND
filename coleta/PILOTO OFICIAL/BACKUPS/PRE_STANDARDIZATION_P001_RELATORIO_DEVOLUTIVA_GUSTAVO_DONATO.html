@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Relatório Individual de Desempenho - Gustavo Donato (P001) | EEFERP-USP</title>
+<style>
+  :root {
+    --primary-gradient: linear-gradient(135deg, #064e3b 0%, #047857 50%, #059669 100%);
+    --accent-gradient: linear-gradient(90deg, #10b981, #34d399, #6ee7b7);
+    --card-bg: #ffffff;
+    --text-main: #0f172a;
+    --text-body: #334155;
+    --text-muted: #64748b;
+    --emerald-dark: #064e3b;
+    --emerald-medium: #047857;
+    --mint-soft: #f0fdf4;
+    --mint-border: #bbf7d0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f8fafc;
+    color: var(--text-body);
+    margin: 0;
+    padding: 24px 12px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .card-container {
+    max-width: 880px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    border-radius: 20px;
+    box-shadow: 0 10px 35px -5px rgba(0, 0, 0, 0.06), 0 0 0 1px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+  }
+
+  .hero-header {
+    background: var(--primary-gradient);
+    color: white;
+    padding: 36px 32px 30px;
+    text-align: center;
+    position: relative;
+  }
+
+  .hero-header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 5px;
+    background: var(--accent-gradient);
+  }
+
+  .institution-badge {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 6px 16px;
+    border-radius: 9999px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #a7f3d0;
+    margin-bottom: 14px;
+  }
+
+  .hero-header h1 {
+    margin: 0 0 8px 0;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+  }
+
+  .hero-header p {
+    margin: 0;
+    font-size: 13.5px;
+    color: #d1fae5;
+    font-weight: 400;
+  }
+
+  .content {
+    padding: 32px 32px 24px;
+  }
+
+  .athlete-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 14px;
+    background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+    border: 1px solid var(--mint-border);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 28px;
+    box-shadow: 0 2px 10px rgba(4, 120, 87, 0.03);
+  }
+
+  .athlete-item strong {
+    display: block;
+    color: var(--emerald-medium);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 2px;
+  }
+
+  .athlete-item span {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-main);
+  }
+
+  .section-title {
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--emerald-dark);
+    margin: 32px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section-title span.badge-num {
+    background: var(--emerald-dark);
+    color: white;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  /* GRID DE KPIS NA ORDEM CRONOLÓGICA DAS COLETAS */
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 14px;
+    margin: 18px 0;
+  }
+
+  .metric-box {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 18px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 155px;
+  }
+
+  .metric-box::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: var(--accent-gradient);
+  }
+
+  .metric-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(4, 120, 87, 0.08);
+    border-color: #a7f3d0;
+  }
+
+  .metric-header {
+    min-height: 38px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .metric-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.35;
+    margin: 0;
+  }
+
+  .metric-body {
+    margin: 6px 0;
+  }
+
+  .metric-value {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--text-main);
+    line-height: 1.1;
+    margin: 0;
+    letter-spacing: -0.5px;
+  }
+
+  .metric-footer {
+    min-height: 28px;
+    display: flex;
+    align-items: center;
+  }
+
+  .metric-pill {
+    display: inline-flex;
+    align-items: center;
+    background: #ecfdf5;
+    color: #047857;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 9999px;
+    border: 1px solid #a7f3d0;
+    line-height: 1.3;
+  }
+
+  .callout-highlight {
+    background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+    border: 1px solid #a7f3d0;
+    border-left: 5px solid #10b981;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 22px 0;
+  }
+
+  .callout-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--emerald-dark);
+    margin-bottom: 8px;
+  }
+
+  .callout-text {
+    font-size: 13.5px;
+    color: #1e293b;
+    margin: 0;
+    line-height: 1.65;
+  }
+
+  /* CARD BIODEX LIMPO E DIRETO (SEM POLUIÇÃO DE BARRAS REPETIDAS) */
+  .biodex-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 24px;
+    margin: 24px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  }
+
+  .biodex-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 12px;
+  }
+
+  .biodex-header h3 {
+    margin: 0;
+    font-size: 16px;
+    color: var(--emerald-dark);
+    font-weight: 800;
+  }
+
+  .biodex-badge {
+    background: #ecfdf5;
+    color: #047857;
+    font-weight: 700;
+    font-size: 11.5px;
+    padding: 5px 12px;
+    border-radius: 9999px;
+    border: 1px solid #a7f3d0;
+  }
+
+  .practice-box {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 18px 0;
+  }
+
+  .practice-box h4 {
+    margin: 0 0 10px 0;
+    color: var(--emerald-dark);
+    font-size: 14px;
+  }
+
+  .practice-box ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .practice-box li {
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: var(--text-body);
+  }
+
+  .references-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 32px;
+  }
+
+  .references-card h4 {
+    margin: 0 0 12px 0;
+    font-size: 12.5px;
+    font-weight: 800;
+    color: var(--emerald-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .references-card ol {
+    margin: 0;
+    padding-left: 18px;
+    font-size: 11.5px;
+    color: var(--text-muted);
+  }
+
+  .references-card li {
+    margin-bottom: 6px;
+    line-height: 1.45;
+  }
+
+  .footer {
+    background: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    padding: 24px 32px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  .footer strong {
+    color: var(--emerald-dark);
+  }
+
+  sup {
+    font-weight: 800;
+    color: #10b981;
+  }
+</style>
+</head>
+<body>
+
+<div class="card-container">
+  <div class="hero-header">
+    <div class="institution-badge">Universidade de São Paulo • EEFERP-USP</div>
+    <h1>Relatório Individual de Desempenho & Composição Corporal</h1>
+    <p>Projeto de Pesquisa: Análise de Fatores Associados ao Desempenho no Handstand e Handstand Walk</p>
+  </div>
+
+  <div class="content">
+    <div class="athlete-card">
+      <div class="athlete-item">
+        <strong>Participante</strong>
+        <span>Gustavo Henrique Donato</span>
+      </div>
+      <div class="athlete-item">
+        <strong>Código / ID</strong>
+        <span>P001 (Atleta Piloto)</span>
+      </div>
+      <div class="athlete-item">
+        <strong>Idade / Sexo</strong>
+        <span>20 anos | Masculino</span>
+      </div>
+      <div class="athlete-item">
+        <strong>Membro Dominante</strong>
+        <span>Destro (Direito)</span>
+      </div>
+      <div class="athlete-item">
+        <strong>Data da Coleta (S1)</strong>
+        <span>02/09/2026 (LaCiDH)</span>
+      </div>
+    </div>
+
+    <p style="font-size: 14px; color: var(--text-body); margin-bottom: 24px;">
+      Olá, <strong>Gustavo</strong>! Agradecemos a sua dedicação na primeira sessão da pesquisa de mestrado na EEFERP-USP. 
+      Abaixo apresentamos a sua devolutiva individual com os testes organizados na exata sequência de execução da coleta: 
+      <strong>1) Composição Corporal (BIA)</strong>, <strong>2) Preensão Manual</strong>, <strong>3) Dinamometria Isométrica de Punho (Biodex)</strong>, 
+      <strong>4) 1-RM no Shoulder Press</strong> e <strong>5) Resistência Belly-to-Wall Handstand</strong>, acompanhados de sua fundamentação científica internacional <sup>[1-14]</sup>.
+    </p>
+
+    <!-- 1. COMPOSIÇÃO CORPORAL -->
+    <div class="section-title">
+      <span class="badge-num">1</span>
+      Composição Corporal — Bioimpedância Elétrica (Sanny® BIA1011-AF)
+    </div>
+
+    <div class="metrics-grid">
+      <div class="metric-box">
+        <div class="metric-header">
+          <div class="metric-label">Gordura Corporal (%GC) <sup>[1,3]</sup></div>
+        </div>
+        <div class="metric-body">
+          <div class="metric-value">13,88%</div>
+        </div>
+        <div class="metric-footer">
+          <div class="metric-pill">Padrão Atlético Saudável (10–15%)</div>
+        </div>
+      </div>
+
+      <div class="metric-box">
+        <div class="metric-header">
+          <div class="metric-label">Massa Livre de Gordura <sup>[1]</sup></div>
+        </div>
+        <div class="metric-body">
+          <div class="metric-value">56,15 kg</div>
+        </div>
+        <div class="metric-footer">
+          <div class="metric-pill">86,1% em Massa Magra Ativa</div>
+        </div>
+      </div>
+
+      <div class="metric-box">
+        <div class="metric-header">
+          <div class="metric-label">Massa Muscular Esquelética <sup>[2]</sup></div>
+        </div>
+        <div class="metric-body">
+          <div class="metric-value">31,06 kg</div>
+        </div>
+        <div class="metric-footer">
+          <div class="metric-pill">Suporte Antigravitacional Adequado</div>
+        </div>
+      </div>
+
+      <div class="metric-box">
+        <div class="metric-header">
+          <div class="metric-label">Ângulo de Fase (PhA) <sup>[4,5]</sup></div>
+        </div>
+        <div class="metric-body">
+          <div class="metric-value" style="color: #047857;">8,98°</div>
+        </div>
+        <div class="metric-footer">
+          <div class="metric-pill" style="background: #dcfce7; color: #047857;">Integridade Celular Elevada</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout-highlight">
+      <div class="callout-title">
+        💡 O que significa o seu Ângulo de Fase (8,98°)? <sup>[4,5]</sup>
+      </div>
+      <p class="callout-text">
+        O Ângulo de Fase (PhA) é um biomarcador derivado da relação entre resistência e reatância, indicativo da capacitância e integridade das membranas celulares. 
+        Em homens jovens saudáveis da sua faixa etária, a literatura reporta valores médios de referência entre <strong>6,5° e 7,8°</strong> <sup>[4]</sup>. 
+        O seu resultado de <strong>8,98°</strong> reflete um tecido celular de excelente integridade estrutural e bom estado de hidratação intra e extracelular.
+      </p>
+    </div>
+
+    <!-- 2. FORÇA NEUROMUSCULAR NA ORDEM CRONOLÓGICA DAS COLETAS -->
+    <div class="section-title">
+      <span class="badge-num">2</span>
+      Perfil Neuromuscular e Força Específica (LaCiDH)
+    </div>
+
+    <!-- 2.1 FORÇA DISTAL: PREENSÃO E FLEXORES DE PUNHO -->
+    <h3 style="font-size: 15px; font-weight: 700; color: var(--text-heading); margin: 18px 0 10px 0;">
+      2.1 Força Distal: Preensão Manual e Flexores de Punho (Biodex)
+    </h3>
+
+    <div class="metrics-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+      <div class="metric-box">
+        <div class="metric-header">
+          <div class="metric-label">1º Preensão Manual (FPM) <sup>[8,9]</sup></div>
+        </div>
+        <div class="metric-body" style="display: flex; align-items: baseline; justify-content: space-between;">
+          <div class="metric-value">52,0 kgf</div>
+          <div style="font-size: 12.5px; font-weight: 600; color: var(--text-muted);">Relativa: 0,80 kgf/kg</div>
+        </div>
+        <div class="metric-footer">
+          <div class="metric-pill" style="background: #ecfdf5; color: #047857; font-weight: 600; border: 1px solid #a7f3d0;">
+            Simetria (LSI): 113,0% (Diferença de 13,0% • Não-Dominante [E] mais forte)
+          </div>
+        </div>
+      </div>
+
+      <div class="metric-box">
+        <div class="metric-header">
+          <div class="metric-label">2º Flexores de Punho (Biodex a 70°) <sup>[6,7]</sup></div>
+        </div>
+        <div class="metric-body" style="display: flex; align-items: baseline; justify-content: space-between;">
+          <div class="metric-value" style="color: #047857;">20,5 N·m</div>
+          <div style="font-size: 12.5px; font-weight: 600; color: var(--text-muted);">Média: 19,5 N·m (0,299 N·m/kg)</div>
+        </div>
+        <div class="metric-footer">
+          <div class="metric-pill" style="background: #ecfdf5; color: #047857; font-weight: 600; border: 1px solid #a7f3d0;">
+            Simetria (LSI): 110,8% (Diferença de 10,8% • Não-Dominante [E] mais forte)
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DETALHAMENTO DISTAL 2.1 -->
+    <div class="biodex-card" style="margin-top: 14px;">
+      <div class="biodex-header">
+        <div>
+          <h4 style="margin: 0; font-size: 13.5px; font-weight: 700; color: var(--text-heading);">Análise Biomecânica dos Punhos e Estratégia de Equilíbrio</h4>
+          <span style="font-size: 12px; color: var(--text-muted);">Interface Palmar, Torque a 70°, Simetria Bilateral e Aplicação no Handstand Walk</span>
+        </div>
+      </div>
+
+      <div class="callout-highlight" style="margin-top: 14px; margin-bottom: 0;">
+        <p class="callout-text">
+          No modelo biomecânico de pêndulo invertido do Handstand, os flexores de punho e a musculatura palmar desempenham no equilíbrio de cabeça para baixo a mesma função que a panturrilha e os pés exercem na postura ereta bípede (<strong>"Wrist Strategy"</strong>) <sup>[6,7]</sup>. Essa musculatura atua como o verdadeiro <strong>"freio de mão" da parada de mão</strong>. Da mesma forma que cravamos as pontas dos pés no solo para conter uma oscilação para a frente, no Handstand são as pontas dos dedos e a palma que esmagam o chão quando o corpo passa da vertical (o temido <em>overbalance</em>). Essa pressão gera um torque corretivo instantâneo que empurra o corpo de volta para o prumo. Ter punhos e mãos fortes proporciona uma ampla margem de segurança para salvar o equilíbrio com pequenos ajustes nas mãos, evitando quebrar a linha dos ombros ou arquear a lombar (a clássica postura em "banana") <sup>[6,7]</sup>.
+        </p>
+        <p class="callout-text" style="margin-top: 10px;">
+          Para garantir essa sustentação palmar, a avaliação de <strong>Força de Preensão Manual (FPM)</strong> acusou pico de <strong>52,0 kgf no membro não-dominante (esquerdo) e 46,0 kgf no membro dominante (direito)</strong> (relação relativa de <strong>0,80 kgf/kg</strong>), superando com folga a média de homens jovens saudáveis (~42 kgf <sup>[8,9]</sup>). O <strong>Índice de Simetria dos Membros na preensão (LSI: 113,0%, diferença de 13,0% a favor da mão esquerda)</strong> situa-se dentro da faixa de equilíbrio fisiológico (<15%) preconizada na literatura neuromuscular <sup>[15]</sup>. Enquanto em destros não-atletas a mão dominante costuma ser discretamente superior (~10%), praticantes de calistenia e ginástica frequentemente equilibram ou invertem essa relação devido às exigências bilaterais de sustentação do peso corporal. Na prática, essa simetria de preensão assegura rigidez uniforme no carpo em ambos os lados <sup>[13,14]</sup>, impedindo o colapso unilateral da base palmar sob o peso invertido. Ademais, no <strong>Handstand Walk</strong>, uma pegada bilateralmente equivalente sugere capacidade homogênea de absorção de impacto no contato sucessivo de cada mão contra o solo (<em>hand strike</em>), mitigando oscilações rotacionais do tronco e prevenindo sobrecargas articulares assimétricas.
+        </p>
+        <p class="callout-text" style="margin-top: 10px;">
+          Já no <strong>Biodex System 4 PRO</strong>, o torque isométrico dos flexores de punho foi avaliado a <strong>70° de extensão</strong>, posição selecionada por sua especificidade biomecânica ao mimetizar a dorsiflexão funcional da mão contra o solo no Handstand <sup>[6,7]</sup>. O voluntário alcançou torque médio bilateral de <strong>19,5 N·m (0,299 N·m/kg)</strong> (com pico de <strong>20,5 N·m [0,314 N·m/kg] no membro não-dominante [esquerdo]</strong> e <strong>18,5 N·m [0,284 N·m/kg] no membro dominante [direito]</strong>), quantificando a capacidade específica de geração de torque no ângulo funcional de atuação do freio palmar (<em>Wrist Strategy</em>) <sup>[6,7]</sup>. O <strong>Índice de Simetria dos Membros nos punhos (LSI: 110,8%, diferença de apenas 10,8% a favor do lado esquerdo)</strong> também atesta excelente simetria intermembros (<15%) <sup>[15]</sup>. Em analogia à locomoção e marcha humana <sup>[15,16]</sup>, essa simetria de torque angular é determinante no <strong>Handstand Walk</strong>: ao caminhar com as mãos, punhos equilibrados tendem a favorecer passadas mais estáveis, com tempos de contato homogêneos e controle direcional consistente, auxiliando a prevenir desvios de trajetória e compensações escapulares unilaterais.
+        </p>
+      </div>
+    </div>
+
+    <!-- 2.2 FORÇA PROXIMAL E RESISTÊNCIA POSTURAL -->
+    <h3 style="font-size: 15px; font-weight: 700; color: var(--text-heading); margin: 24px 0 10px 0;">
+      2.2 Força Proximal e Resistência: Shoulder Press e Parada de Mão na Parede
+    </h3>
+
+    <div class="metrics-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+      <div class="metric-box">
+        <div class="metric-header">
+          <div class="metric-label">3º 1-RM Shoulder Press <sup>[10]</sup></div>
+        </div>
+        <div class="metric-body">
+          <div class="metric-value">56,0 kg</div>
+        </div>
+        <div class="metric-footer">
+          <div class="metric-pill">85,8% da massa corporal (Força Máxima)</div>
+        </div>
+      </div>
+
+      <div class="metric-box">
+        <div class="metric-header">
+          <div class="metric-label">4º Resistência Wall HS <sup>[6]</sup></div>
+        </div>
+        <div class="metric-body">
+          <div class="metric-value">64 seg</div>
+        </div>
+        <div class="metric-footer">
+          <div class="metric-pill">>1 min em Handstand Estrito</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DETALHAMENTO PROXIMAL 2.2 -->
+    <div class="biodex-card" style="margin-top: 14px;">
+      <div class="biodex-header">
+        <div>
+          <h4 style="margin: 0; font-size: 13.5px; font-weight: 700; color: var(--text-heading);">Análise de Empurrada Vertical e Sustentação Sob Fadiga</h4>
+          <span style="font-size: 12px; color: var(--text-muted);">Cintura Escapular, Travamento Articular e Estabilidade do Core</span>
+        </div>
+      </div>
+
+      <div class="callout-highlight" style="margin-top: 14px; margin-bottom: 0;">
+        <p class="callout-text">
+          Erguer <strong>56,0 kg (quase 86% da sua massa corporal)</strong> em desenvolvimento estrito no <strong>Shoulder Press</strong> demonstra elevado nível de força máxima de empurrada vertical, exigindo ativação expressiva de deltóides e tríceps em conjunto com a elevação e rotação superior das escápulas (serrátil anterior e trapézio) <sup>[10]</sup>. Na prática do Handstand, essa força potencializa a capacidade de <strong>"empurrar o chão para longe"</strong>, travando ativamente a cintura escapular para que o tronco não afunde nos ombros sob a ação da gravidade <sup>[6,10]</sup>.
+        </p>
+        <p class="callout-text" style="margin-top: 10px;">
+          Por sua vez, a sustentação de <strong>64 segundos na parada de mão na parede</strong> (Belly-to-Wall a 20 cm) comprova excelente resistência isométrica à fadiga dos músculos estabilizadores proximais e do core sob alinhamento estrito <sup>[6,11]</sup>. No treinamento prático, dada a especificidade estática do teste, essa resistência sugere sobretudo uma elevada capacidade para sustentar a postura no <strong>Handstand estático</strong> e retardar a degradação técnica ao longo de séries sucessivas, podendo também fornecer uma base de suporte para tarefas invertidas mais dinâmicas como o <strong>Handstand Walk</strong>.
+        </p>
+      </div>
+    </div>
+
+    <!-- BOX EXPLICAÇÃO PRÁTICA NA ORDEM DOS TESTES -->
+    <div class="practice-box">
+      <h4>🎯 Resumo Integrado:</h4>
+      <ul>
+        <li><strong>1º Preensão Manual (52 kgf) <sup>[8,9]</sup>:</strong> Significativamente acima da média populacional (~42 kgf). Auxilia na firmeza palmar e na ancoragem mecânica das mãos contra o solo (LSI: 113,0%, discreto predomínio do membro não-dominante/esquerdo).</li>
+        <li><strong>2º Flexores de Punho no Biodex (20,5 N·m / 0,314 N·m/kg) <sup>[6,7,12]</sup>:</strong> Capacidade de freio corretivo ("Wrist Strategy") compatível com as demandas da parada de mão, com excelente simetria bilateral (LSI: 110,8%; membro não-dominante/esquerdo ligeiramente mais forte que o dominante) para suportar o peso invertido.</li>
+        <li><strong>3º Shoulder Press (56 kg estrito) <sup>[10]</sup>:</strong> Empurrar quase 86% do peso corporal acima da cabeça sem auxílio das pernas reflete alta rigidez isométrica e dinâmica da cintura escapular (deltóides e tríceps).</li>
+        <li><strong>4º Resistência Belly-to-Wall (64s) <sup>[6]</sup>:</strong> Sustentação contínua superior a 1 minuto em extensão estrita, sugerindo boa tolerância dos estabilizadores escapulares (serrátil anterior e trapézio) e core sob fadiga cumulativa.</li>
+      </ul>
+    </div>
+
+    <!-- 3. SESSÃO 2 -->
+    <div class="section-title">
+      <span class="badge-num">3</span>
+      Próxima Etapa: Sessão 2 no LaBioCoM (Vicon & Bertec)
+    </div>
+
+    <p style="font-size: 13.5px; color: var(--text-body);">
+      Sua segunda sessão está confirmada para <strong>Quarta-feira, 09/09/2026 das 08:00 às 09:00 no LaBioCoM</strong>. 
+      Na semana que vem vamos avaliar a biomecânica cinemática e cinética em movimento:
+    </p>
+    <ul style="font-size: 13px; color: var(--text-body); padding-left: 20px;">
+      <li><strong>12 Câmeras 3D Vicon:</strong> Medição do alinhamento tridimensional de punhos, ombros, quadril e ponta de pé no espaço <sup>[6,11]</sup>.</li>
+      <li><strong>Plataformas de Força Bertec:</strong> Registro a 1000 Hz da oscilação do Centro de Pressão (CoP) para analisar a atuação prática da estratégia dos punhos <sup>[6,7]</sup>.</li>
+      <li><strong>Handstand Walk (HSW):</strong> Registro da velocidade dos passos com as mãos, comprimento das passadas e cadência motora!</li>
+    </ul>
+
+    <!-- 4. REFERÊNCIAS CIENTÍFICAS -->
+    <div class="references-card">
+      <h4>📚 Referências Científicas e Normativas Consultadas:</h4>
+      <ol>
+        <li>Kyle, U. G., et al. (2004). Bioelectrical impedance analysis—part I: review of principles and methods. <em>Clinical Nutrition</em>, 23(5), 1226-1243.</li>
+        <li>Janssen, I., et al. (2000). Estimation of skeletal muscle mass by bioelectrical impedance analysis. <em>Journal of Applied Physiology</em>, 89(2), 465-471.</li>
+        <li>American College of Sports Medicine (ACSM). (2018). <em>ACSM's Guidelines for Exercise Testing and Prescription</em> (10th ed.). Wolters Kluwer.</li>
+        <li>Barbosa-Silva, M. C. G., et al. (2005). Bioelectrical impedance analysis: population reference values for phase angle by age and sex. <em>Am J Clin Nutr</em>, 82(1), 49-52.</li>
+        <li>Norman, K., et al. (2012). Bioelectrical phase angle as a biomarker—recent advances. <em>Clinical Nutrition</em>, 31(6), 854-861.</li>
+        <li>Kerwin, D. G., & Trewartha, G. (2001). Strategies for maintaining a handstand. <em>Sports Biomechanics</em>, 1(2), 163-176.</li>
+        <li>Blenkinsop, G. M., Pain, M. T. G., & Hiley, M. J. (2017). Balance control strategies during perturbed and unperturbed balance in standing and handstand. <em>Royal Society Open Science</em>, 4(7), 161018.</li>
+        <li>Novaes, R. D., et al. (2009). Equações de referência para predição da força de preensão manual em indivíduos brasileiros saudáveis. <em>Rev Bras Med Esporte</em>, 15(4), 265-270.</li>
+        <li>Bohannon, R. W. (2019). Normative reference values for hand-grip dynamometry: systematic review and meta-analysis. <em>J Phys Ther Sci</em>, 31(11), 932-938.</li>
+        <li>Soriano, M. A., et al. (2019). The overhead press: A review of biomechanics and exercise prescription. <em>Strength & Conditioning Journal</em>, 41(4), 48-60.</li>
+        <li>Gautier, G., et al. (2007). Influence of visual information on postural control in a handstand. <em>Human Movement Science</em>, 26(4), 577-594.</li>
+        <li>Ellenbecker, T. S., et al. (2006). Isokinetic wrist strength in competitive athletes. <em>American Journal of Sports Medicine</em>, 34(11), 1845-1852.</li>
+        <li>Alizadehkhaiyat, O., et al. (2007). Isometric forearm and wrist strength in healthy adults. <em>Journal of Electromyography and Kinesiology</em>, 17(5), 629-637.</li>
+        <li>Rohleder, J., et al. (2021). Wrist joint biomechanics and handstand stability in gymnastics. <em>Sports Biomechanics</em>, 20(3), 312-326.</li>
+        <li>Bishop, C., Turner, A., & Read, P. (2018). Effects of inter-limb asymmetries on physical and sports performance: a systematic review. <em>Journal of Sports Sciences</em>, 36(10), 1135-1144.</li>
+        <li>Herzog, W., Nigg, B. M., Read, L. J., & Olsson, E. (1989). Asymmetries in ground reaction force patterns in normal human gait. <em>Medicine and Science in Sports and Exercise</em>, 21(1), 110-118.</li>
+      </ol>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    Pesquisador Responsável: <strong>Guilherme de Paula Lemos</strong> | Orientador: <strong>Prof. Dr. Matheus Machado Gomes</strong><br>
+    Escola de Educação Física e Esporte de Ribeirão Preto — EEFERP-USP | Contato: guilherme.lemos@usp.br
+  </div>
+</div>
+
+</body>
+</html>

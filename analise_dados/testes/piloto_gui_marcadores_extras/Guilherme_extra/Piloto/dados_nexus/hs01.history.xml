@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Trial name="hs01" notes="">
+
+  <Parameters>
+    <Param header="0" name="Capture Date" value="2026-Jun-11 16:27:02"/>
+    <Param header="0" name="x2d" value="hs01.x2d"/>
+    <Param header="0" name="x1d" value="hs01.x1d"/>
+  </Parameters>
+
+  <Run name="" notes="">
+    <Parameters>
+      <Param header="0" name="Version" value="2.12.1.133760h"/>
+      <Param header="0" name="Start Date" value="2026-Jun-11 16:27:09"/>
+    </Parameters>
+    <OperationType name="Core Processing" notes="">
+      <OperationSubType name="Reconstruct" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:27:09"/>
+          <Param header="1" name="Frame Range" value=""/>
+          <Param header="0" name="First Frame" value="1"/>
+          <Param header="0" name="Last Frame" value="3371"/>
+          <Param header="1" name="Grayscale Circle Fitting" value=""/>
+          <Param header="0" name="Enable" value="Yes"/>
+          <Param header="0" name="Circularity Threshold Tweak" value="0"/>
+          <Param header="1" name="Reconstruction" value=""/>
+          <Param header="0" name="3D Predictions" value="No"/>
+          <Param header="0" name="Environmental Drift Tolerance" value="1.5"/>
+          <Param header="0" name="Minimum Cameras to Start Trajectory" value="3"/>
+          <Param header="0" name="Minimum Cameras to Continue Trajectory" value="2"/>
+          <Param header="0" name="Reconstruction Minimum Separation" value="14"/>
+          <Param header="0" name="Minimum Centroid Radius" value="0"/>
+          <Param header="0" name="Maximum Centroid Radius" value="50"/>
+          <Param header="0" name="Minimum Reconstruction Radius" value="0"/>
+          <Param header="0" name="Maximum Reconstruction Radius" value="1000"/>
+          <Param header="0" name="Volume Min X" value="-100000"/>
+          <Param header="0" name="Volume Min Y" value="-100000"/>
+          <Param header="0" name="Volume Min Z" value="-100000"/>
+          <Param header="0" name="Volume Max X" value="100000"/>
+          <Param header="0" name="Volume Max Y" value="100000"/>
+          <Param header="0" name="Volume Max Z" value="100000"/>
+          <Param header="1" name="Trajectory Tracking" value=""/>
+          <Param header="0" name="Trajectory Startup Error" value="150"/>
+          <Param header="0" name="Trajectory Prediction Error" value="150"/>
+          <Param header="0" name="Max Trajectory Length to Delete" value="0"/>
+        </Parameters>
+      </OperationSubType>
+    </OperationType>
+    <OperationType name="Manual Edits" notes="">
+      <OperationSubType name="Label Trajectory  Guilherme_extra:LFHD" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:27:29"/>
+          <Param header="0" name="Label" value="Guilherme_extra:LFHD"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:RFHD" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:27:29"/>
+          <Param header="0" name="Label" value="Guilherme_extra:RFHD"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:LBHD" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:27:30"/>
+          <Param header="0" name="Label" value="Guilherme_extra:LBHD"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:RBHD" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:27:30"/>
+          <Param header="0" name="Label" value="Guilherme_extra:RBHD"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:C7" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:27:31"/>
+          <Param header="0" name="Label" value="Guilherme_extra:C7"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:T10" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:27:32"/>
+          <Param header="0" name="Label" value="Guilherme_extra:T10"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:STRN" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:27:38"/>
+          <Param header="0" name="Label" value="Guilherme_extra:STRN"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:RBAK" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:27:40"/>
+          <Param header="0" name="Label" value="Guilherme_extra:RBAK"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:LSHO" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:27:41"/>
+          <Param header="0" name="Label" value="Guilherme_extra:LSHO"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:LUPA" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:27:42"/>
+          <Param header="0" name="Label" value="Guilherme_extra:LUPA"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:LELB" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:27:42"/>
+          <Param header="0" name="Label" value="Guilherme_extra:LELB"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:LFRM" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:27:51"/>
+          <Param header="0" name="Label" value="Guilherme_extra:LFRM"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:LWRA" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:27:51"/>
+          <Param header="0" name="Label" value="Guilherme_extra:LWRA"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:LWRB" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:27:52"/>
+          <Param header="0" name="Label" value="Guilherme_extra:LWRB"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:LFIN" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:27:52"/>
+          <Param header="0" name="Label" value="Guilherme_extra:LFIN"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:RSHO" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:27:54"/>
+          <Param header="0" name="Label" value="Guilherme_extra:RSHO"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:RUPA" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:27:54"/>
+          <Param header="0" name="Label" value="Guilherme_extra:RUPA"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:RELB" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:27:55"/>
+          <Param header="0" name="Label" value="Guilherme_extra:RELB"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:RFRM" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:27:55"/>
+          <Param header="0" name="Label" value="Guilherme_extra:RFRM"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:RWRA" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:27:56"/>
+          <Param header="0" name="Label" value="Guilherme_extra:RWRA"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:RWRB" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:27:56"/>
+          <Param header="0" name="Label" value="Guilherme_extra:RWRB"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:RFIN" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:27:57"/>
+          <Param header="0" name="Label" value="Guilherme_extra:RFIN"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:LASI" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:28:00"/>
+          <Param header="0" name="Label" value="Guilherme_extra:LASI"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:RASI" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:28:00"/>
+          <Param header="0" name="Label" value="Guilherme_extra:RASI"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:LPSI" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:28:01"/>
+          <Param header="0" name="Label" value="Guilherme_extra:LPSI"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:RPSI" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:28:02"/>
+          <Param header="0" name="Label" value="Guilherme_extra:RPSI"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:LTHI" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:28:06"/>
+          <Param header="0" name="Label" value="Guilherme_extra:LTHI"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:LKNE" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:28:06"/>
+          <Param header="0" name="Label" value="Guilherme_extra:LKNE"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:LTIB" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:28:06"/>
+          <Param header="0" name="Label" value="Guilherme_extra:LTIB"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:LANK" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:28:13"/>
+          <Param header="0" name="Label" value="Guilherme_extra:LANK"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:LHEE" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:28:13"/>
+          <Param header="0" name="Label" value="Guilherme_extra:LHEE"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:LTOE" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:28:14"/>
+          <Param header="0" name="Label" value="Guilherme_extra:LTOE"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:RTHI" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:28:17"/>
+          <Param header="0" name="Label" value="Guilherme_extra:RTHI"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:RKNE" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:28:18"/>
+          <Param header="0" name="Label" value="Guilherme_extra:RKNE"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:RTIB" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:28:18"/>
+          <Param header="0" name="Label" value="Guilherme_extra:RTIB"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:RANK" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:28:20"/>
+          <Param header="0" name="Label" value="Guilherme_extra:RANK"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:RHEE" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:28:20"/>
+          <Param header="0" name="Label" value="Guilherme_extra:RHEE"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:RTOE" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:28:21"/>
+          <Param header="0" name="Label" value="Guilherme_extra:RTOE"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:referencia1" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:28:24"/>
+          <Param header="0" name="Label" value="Guilherme_extra:referencia1"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+      <OperationSubType name="Label Trajectory  Guilherme_extra:referencia2" notes="">
+        <Parameters>
+          <Param header="0" name="Date" value="2026-Jun-11 16:28:24"/>
+          <Param header="0" name="Label" value="Guilherme_extra:referencia2"/>
+          <Param header="0" name="Frame" value="1312"/>
+        </Parameters>
+      </OperationSubType>
+    </OperationType>
+  </Run>
+
+</Trial>
